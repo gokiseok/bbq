@@ -75,9 +75,10 @@ export default function Reviews() {
         stagger: 0.1,
         duration: 0.8,
         ease: "power3.out",
+        immediateRender: false,
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top 75%",
+          start: "top 80%",
           once: true,
         },
       });
