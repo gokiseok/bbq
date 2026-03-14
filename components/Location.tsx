@@ -43,7 +43,7 @@ export default function Location() {
           {/* 지도 */}
           <div className="w-full aspect-[4/3] overflow-hidden bg-bg-card border border-white/5">
             <iframe
-              src="https://maps.google.com/maps?q=37.54092,127.07123&z=17&output=embed&hl=ko"
+              src="https://maps.google.com/maps?q=37.541260,127.070687&z=17&output=embed&hl=ko"
               className="w-full h-full border-0"
               allowFullScreen
               loading="lazy"
