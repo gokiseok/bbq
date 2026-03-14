@@ -13,6 +13,6 @@ const FALLBACK =
 
 export default function ImageWithFallback({ src, fallbackSrc = FALLBACK, ...props }: Props) {
   const [imgSrc, setImgSrc] = useState(src);
-  // alt prop is forwarded via {...props} — eslint-disable-next-line jsx-a11y/alt-text
+  // eslint-disable-next-line jsx-a11y/alt-text
   return <Image {...props} src={imgSrc} onError={() => setImgSrc(fallbackSrc)} />;
 }
