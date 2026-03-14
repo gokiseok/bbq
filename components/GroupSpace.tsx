@@ -128,6 +128,44 @@ export default function GroupSpace() {
           ))}
         </div>
 
+        {/* 실제 활용 사례 */}
+        <div className="mb-12">
+          <p className="text-gold text-xs tracking-[0.3em] uppercase mb-6">Real Cases</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {[
+              {
+                img: "/images/danche-1.jpg",
+                tag: "회사 회식",
+                desc: "팀워크를 높이는 특별한 저녁",
+              },
+              {
+                img: "/images/danche-2.jpg",
+                tag: "학과·동아리 행사",
+                desc: "소중한 추억을 함께 나누는 공간",
+              },
+            ].map((item) => (
+              <div key={item.tag} className="space-card group relative overflow-hidden bg-bg-card">
+                <div className="relative aspect-[16/9] overflow-hidden">
+                  <ImageWithFallback
+                    src={item.img}
+                    alt={item.tag}
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-bg-base/70 to-transparent" />
+                  <div className="absolute bottom-4 left-4">
+                    <span className="inline-block px-3 py-1 bg-gold text-bg-base text-xs font-semibold tracking-wide mb-2">
+                      {item.tag}
+                    </span>
+                    <p className="text-text-primary text-sm font-medium">{item.desc}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* 하단 배너 */}
         <div className="relative overflow-hidden bg-bg-card border border-gold/20 p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-6">
