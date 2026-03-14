@@ -2,26 +2,80 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Pretendard */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-base: #0a0a0a;
+  --bg-card: #141414;
+  --bg-section: #0f0f0f;
+  --gold: #c9a84c;
+  --gold-light: #e8c97a;
+  --gold-dark: #8a6f2e;
+  --text: #f5f0e8;
+  --text-muted: #888070;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-base);
+  color: var(--text);
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* SolmoeKDG 브랜드 폰트 (솔뫼 김대건체) */
+@font-face {
+  font-family: "SolmoeKDG";
+  src: url("/fonts/SolmoeKDG-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SolmoeKDG";
+  src: url("/fonts/SolmoeKDG-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 스크롤바 커스텀 */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-base);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gold-dark);
+  border-radius: 2px;
+}
+
+/* 기본 링크 */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 애니메이션 초기 상태 (GSAP에서 제어) */
+.gsap-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.gsap-scale {
+  opacity: 0;
+  transform: scale(0.95);
 }

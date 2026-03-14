@@ -9,8 +9,21 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        "bg-base": "#0a0a0a",
+        "bg-card": "#141414",
+        "bg-section": "#0f0f0f",
+        gold: "#c9a84c",
+        "gold-light": "#e8c97a",
+        "gold-dark": "#8a6f2e",
+        "text-primary": "#f5f0e8",
+        "text-muted": "#888070",
+      },
+      fontFamily: {
+        pretendard: ["Pretendard", "sans-serif"],
+        brand: ["SolmoeKDG", "serif"],
+      },
+      screens: {
+        xs: "390px",
       },
     },
   },
