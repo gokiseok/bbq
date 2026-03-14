@@ -7,7 +7,7 @@ import ImageWithFallback from "@/components/ImageWithFallback";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const RESERVATION_URL = "https://booking.naver.com/booking/13/bizes/1143527";
+const RESERVATION_URL = "https://booking.naver.com/booking/6/bizes/1095878";
 
 export default function ReservationCTA() {
   const sectionRef = useRef<HTMLElement>(null);
