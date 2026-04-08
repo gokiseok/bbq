@@ -14,19 +14,19 @@ const SPACES = [
     seats: "10",
     label: "소규모",
     desc: "팀 회식, 가족 모임에 딱 맞는 아늑한 공간",
-    img: "/images/space-10.jpg",
+    img: "/images/space-10.png",
   },
   {
     seats: "14",
     label: "중규모",
     desc: "동아리, 부서 회식 등 중간 규모 모임",
-    img: "/images/space-14.jpg",
+    img: "/images/space-14.png",
   },
   {
     seats: "32",
     label: "단독 대관",
     desc: "2층 전체 대관. 프라이빗한 단체 행사",
-    img: "/images/space-32.jpg",
+    img: "/images/space-32.png",
   },
 ];
 
@@ -134,12 +134,12 @@ export default function GroupSpace() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
               {
-                img: "/images/danche-1.jpg",
+                img: "/images/danche-1.png",
                 tag: "회사 회식",
                 desc: "팀워크를 높이는 특별한 저녁",
               },
               {
-                img: "/images/danche-2.jpg",
+                img: "/images/danche-2.png",
                 tag: "학과·동아리 행사",
                 desc: "소중한 추억을 함께 나누는 공간",
               },

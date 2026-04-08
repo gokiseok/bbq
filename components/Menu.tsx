@@ -14,7 +14,7 @@ const FEATURED_MENU = [
     price: "28,000",
     unit: "원 (한판 400g)",
     desc: "100% 국내산 돼지 갈매기살. 두툼하게 통으로 제공해 육즙과 식감이 살아있습니다.",
-    img: "/images/menu-galmaegi.jpg",
+    img: "/images/menu-galmaegi.png",
   },
   {
     name: "가브리살",
@@ -22,7 +22,7 @@ const FEATURED_MENU = [
     price: "39,000",
     unit: "원 (한판 400g)",
     desc: "부드러운 결과 풍부한 마블링. 불 위에서 더욱 빛나는 가브리살.",
-    img: "/images/menu-gabrisal.jpg",
+    img: "/images/menu-gabrisal.png",
   },
   {
     name: "목살",
@@ -30,7 +30,7 @@ const FEATURED_MENU = [
     price: "35,000",
     unit: "원 (한판 400g)",
     desc: "국내산 돼지 목살. 씹을수록 깊은 맛이 우러나는 고기석의 정석.",
-    img: "/images/menu-moksal.jpg",
+    img: "/images/menu-moksal.png",
   },
   {
     name: "꽃게 순두부전골",
