@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
 const RESERVATION_URL =
-  "https://booking.naver.com/booking/13/bizes/1143527";
+  "https://booking.naver.com/booking/6/bizes/1095878";
 
 export default function Hero() {
   const containerRef = useRef<HTMLDivElement>(null);
