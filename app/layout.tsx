@@ -32,7 +32,7 @@ const restaurantSchema = {
     streetAddress: "동일로22길 117-13",
     addressLocality: "광진구",
     addressRegion: "서울특별시",
-    postalCode: "(우편번호)",
+    postalCode: "05017",
     addressCountry: "KR",
   },
   geo: {
@@ -85,7 +85,7 @@ const restaurantSchema = {
   },
   sameAs: [
     "https://map.naver.com/p/search/고기석%20건대본점",
-    "(인스타그램 URL)",
+    "https://www.instagram.com/gokiseok/",
   ],
 };
 
@@ -114,7 +114,7 @@ const faqSchema = {
       name: "고기석 건대본점은 어떤 메뉴가 있나요?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "대표 메뉴는 통갈매기살(100g 7,000원)이며, 얼큰 꽃게 순두부전골(9,000원)도 무료로 제공합니다.",
+        text: "대표 메뉴는 통갈매기살(100g 7,000원)이며, 가브리살·목살도 함께 제공합니다. 모든 고기는 국내산이며, 매장에서 직접 손질합니다.",
       },
     },
     {
