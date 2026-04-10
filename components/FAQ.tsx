@@ -42,7 +42,7 @@ export default function FAQ() {
               고기석 건대본점은 예약이 가능한가요?
             </h3>
             <p className="text-text-muted text-sm leading-relaxed">
-              네, 단체 예약 가능합니다. 회식, 청첩장 모임, 가족 모임 등 10인 이상 단체석 예약은 전화로 문의주시기 바랍니다.
+              네, 단체 예약 가능합니다. 회식, 청첩장 모임, 가족 모임 등 10인 이상 단체석 예약은 위 예약버튼 혹은 전화로 문의주시기 바랍니다.
             </p>
           </div>
 
@@ -51,7 +51,7 @@ export default function FAQ() {
               고기석 건대본점 위치는 어디인가요?
             </h3>
             <p className="text-text-muted text-sm leading-relaxed">
-              서울 광진구 건대입구역 인근에 위치해 있으며, 지하철 2호선·7호선 건대입구역에서 도보 5분 거리입니다.
+              서울 광진구 건대입구역 인근에 위치해 있으며, 지하철 2호선·7호선 건대입구역에서 도보 1분 거리입니다.
             </p>
           </div>
         </div>
