@@ -4,17 +4,17 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 
 const NAV_LINKS = [
-  { label: "소개", href: "#about" },
-  { label: "메뉴", href: "#menu" },
-  { label: "단체회식", href: "#space" },
-  { label: "후기", href: "#reviews" },
-  { label: "오시는 길", href: "#location" },
+  { label: "About", href: "#about" },
+  { label: "Menu", href: "#menu" },
+  { label: "Group", href: "#space" },
+  { label: "Reviews", href: "#reviews" },
+  { label: "Location", href: "#location" },
 ];
 
 const RESERVATION_URL =
   "https://booking.naver.com/booking/6/bizes/1095878";
 
-export default function Header() {
+export default function HeaderEn() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const headerRef = useRef<HTMLElement>(null);
@@ -35,12 +35,12 @@ export default function Header() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        {/* 로고 */}
-        <Link href="/" className="font-brand text-2xl text-text-primary tracking-wider">
+        {/* Logo */}
+        <Link href="/en" className="font-brand text-2xl text-text-primary tracking-wider">
           고기석
         </Link>
 
-        {/* 데스크탑 Nav */}
+        {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">
           {NAV_LINKS.map((link) => (
             <a
@@ -53,13 +53,13 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* 언어 전환 + 예약 CTA */}
+        {/* Lang switch + CTA */}
         <div className="hidden md:flex items-center gap-3">
           <Link
-            href="/en"
+            href="/"
             className="text-xs text-text-muted hover:text-gold transition-colors duration-300 tracking-widest border border-white/10 hover:border-gold/40 px-2.5 py-1"
           >
-            EN
+            KO
           </Link>
           <a
             href={RESERVATION_URL}
@@ -67,35 +67,23 @@ export default function Header() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-5 py-2 bg-gold text-bg-base text-sm font-semibold tracking-wide rounded-sm hover:bg-gold-light transition-colors duration-300"
           >
-            지금 예약
+            Reserve Now
           </a>
         </div>
 
-        {/* 모바일 햄버거 */}
+        {/* Mobile hamburger */}
         <button
           className="md:hidden flex flex-col gap-1.5 p-1"
           onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="메뉴 열기"
+          aria-label="Open menu"
         >
-          <span
-            className={`block w-6 h-0.5 bg-text-primary transition-all duration-300 ${
-              menuOpen ? "rotate-45 translate-y-2" : ""
-            }`}
-          />
-          <span
-            className={`block w-6 h-0.5 bg-text-primary transition-all duration-300 ${
-              menuOpen ? "opacity-0" : ""
-            }`}
-          />
-          <span
-            className={`block w-6 h-0.5 bg-text-primary transition-all duration-300 ${
-              menuOpen ? "-rotate-45 -translate-y-2" : ""
-            }`}
-          />
+          <span className={`block w-6 h-0.5 bg-text-primary transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
+          <span className={`block w-6 h-0.5 bg-text-primary transition-all duration-300 ${menuOpen ? "opacity-0" : ""}`} />
+          <span className={`block w-6 h-0.5 bg-text-primary transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
         </button>
       </div>
 
-      {/* 모바일 메뉴 */}
+      {/* Mobile menu */}
       <div
         className={`md:hidden overflow-hidden transition-all duration-400 ${
           menuOpen ? "max-h-96 pb-4" : "max-h-0"
@@ -112,6 +100,13 @@ export default function Header() {
               {link.label}
             </a>
           ))}
+          <Link
+            href="/"
+            className="text-base text-text-muted hover:text-text-primary transition-colors py-1 border-b border-white/5"
+            onClick={() => setMenuOpen(false)}
+          >
+            한국어 (KO)
+          </Link>
           <a
             href={RESERVATION_URL}
             target="_blank"
@@ -119,7 +114,7 @@ export default function Header() {
             className="mt-2 text-center py-3 bg-gold text-bg-base font-semibold tracking-wide rounded-sm"
             onClick={() => setMenuOpen(false)}
           >
-            지금 예약하기
+            Reserve Now
           </a>
         </nav>
       </div>

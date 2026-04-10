@@ -14,6 +14,14 @@ export const metadata: Metadata = {
     images: [{ url: "https://bbq.gokiseok.com/og-image.jpg" }],
     locale: "ko_KR",
   },
+  alternates: {
+    canonical: "https://bbq.gokiseok.com/",
+    languages: {
+      ko: "https://bbq.gokiseok.com/",
+      en: "https://bbq.gokiseok.com/en",
+      "x-default": "https://bbq.gokiseok.com/",
+    },
+  },
 };
 
 const restaurantSchema = {
