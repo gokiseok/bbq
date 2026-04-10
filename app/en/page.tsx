@@ -10,10 +10,19 @@ import LocationEn from "@/components/en/LocationEn";
 import FAQEn from "@/components/en/FAQEn";
 import FooterEn from "@/components/en/FooterEn";
 import FixedBottomBarEn from "@/components/en/FixedBottomBarEn";
+import { restaurantSchemaEn, faqSchemaEn } from "./schemas";
 
 export default function HomeEn() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(restaurantSchemaEn) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchemaEn) }}
+      />
       <HeaderEn />
       <main>
         <HeroEn />
