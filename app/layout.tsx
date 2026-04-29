@@ -5,15 +5,23 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "건대입구 고기집 고기석 건대본점 - 통갈매기살 전문 | 건대 회식 추천",
   description:
-    "서울 건대입구역 도보 5분, 통갈매기살 전문점 고기석 건대본점. 건대 회식·단체모임·청첩장모임 추천. 갈매기살 100g 7,000원.",
+    "건대입구역 도보 5분, 통갈매기살 전문 고기석 건대본점. 100g 7,000원 시그니처 통갈매기살과 10·14·32인 단체룸으로 회식·청첩장·단체모임에 최적. 매일 17:30~21:30 영업, 단체 예약 가능.",
   keywords: "건대고기집, 건대회식, 건대입구고기집, 건대갈매기살, 건대단체식당, 고기석, 통갈매기살",
   openGraph: {
     title: "고기석 건대본점 - 건대입구 통갈매기살 전문점",
-    description: "건대 회식하면 고기석. 통갈매기살 100g 7,000원.",
+    description:
+      "건대입구역 도보 5분, 통갈매기살 100g 7,000원. 10·14·32인 단체룸으로 회식·청첩장·단체모임에 최적. 매일 17:30~21:30 영업.",
     type: "website",
     url: "https://bbq.gokiseok.com",
     images: [{ url: "https://bbq.gokiseok.com/og-image.jpg" }],
     locale: "ko_KR",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "고기석 건대본점 - 건대입구 통갈매기살 전문점",
+    description:
+      "건대입구역 도보 5분, 통갈매기살 100g 7,000원. 10·14·32인 단체룸으로 회식·청첩장·단체모임에 최적. 매일 17:30~21:30 영업.",
+    images: ["https://bbq.gokiseok.com/og-image.jpg"],
   },
   alternates: {
     canonical: "https://bbq.gokiseok.com/",
