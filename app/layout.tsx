@@ -31,6 +31,12 @@ export const metadata: Metadata = {
       "x-default": "https://bbq.gokiseok.com/",
     },
   },
+  verification: {
+    other: {
+      "msvalidate.01": "A8D57C9404DFEC7AD9E3827B97172F00",
+      "naver-site-verification": "936113db9863e28fad256186aac06e7be27e5341",
+    },
+  },
 };
 
 const restaurantSchema = {
