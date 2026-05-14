@@ -11,8 +11,20 @@ export const metadata: Metadata = {
     description: "Best Korean BBQ near Konkuk University. Whole skirt meat ₩7,000/100g. Group reservations available.",
     type: "website",
     url: "https://bbq.gokiseok.com/en",
-    images: [{ url: "https://bbq.gokiseok.com/og-image.jpg" }],
+    images: [
+      {
+        url: "https://bbq.gokiseok.com/images/hero-poster.jpg",
+        width: 2432,
+        height: 1760,
+        alt: "Gokiseok Konkuk Main Branch - Whole Galmaegisal",
+      },
+    ],
     locale: "en_US",
+  },
+  other: {
+    thumbnail: "https://bbq.gokiseok.com/images/hero-poster.jpg",
+    "og:image:secure_url": "https://bbq.gokiseok.com/images/hero-poster.jpg",
+    "og:image:type": "image/jpeg",
   },
   alternates: {
     canonical: "https://bbq.gokiseok.com/en",
