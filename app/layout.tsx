@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     url: "https://bbq.gokiseok.com",
     images: [
       {
-        url: "https://bbq.gokiseok.com/images/hero-poster.jpg",
-        width: 2432,
-        height: 1760,
+        url: "https://bbq.gokiseok.com/images/thumb-nail.png",
+        width: 2400,
+        height: 1792,
         alt: "고기석 건대본점 - 통갈매기살",
       },
     ],
@@ -28,12 +28,12 @@ export const metadata: Metadata = {
     title: "고기석 건대본점 - 건대입구 통갈매기살 전문점",
     description:
       "건대입구역 도보 5분, 통갈매기살 100g 7,000원. 10·14·32인 단체룸으로 회식·청첩장·단체모임에 최적. 매일 17:30~21:30 영업.",
-    images: ["https://bbq.gokiseok.com/images/hero-poster.jpg"],
+    images: ["https://bbq.gokiseok.com/images/thumb-nail.png"],
   },
   other: {
-    thumbnail: "https://bbq.gokiseok.com/images/hero-poster.jpg",
-    "og:image:secure_url": "https://bbq.gokiseok.com/images/hero-poster.jpg",
-    "og:image:type": "image/jpeg",
+    thumbnail: "https://bbq.gokiseok.com/images/thumb-nail.png",
+    "og:image:secure_url": "https://bbq.gokiseok.com/images/thumb-nail.png",
+    "og:image:type": "image/png",
   },
   alternates: {
     canonical: "https://bbq.gokiseok.com/",
@@ -57,7 +57,7 @@ const restaurantSchema = {
   name: "고기석 건대본점",
   alternateName: ["Gokiseok Konkuk Main", "고기석"],
   description: "서울 건대입구역 인근 통갈매기살 전문 고기집. 회식·단체모임 특화.",
-  image: ["https://bbq.gokiseok.com/images/hero-poster.jpg"],
+  image: ["https://bbq.gokiseok.com/images/thumb-nail.png"],
   url: "https://bbq.gokiseok.com",
   telephone: "+82-507-1433-0614",
   priceRange: "₩₩",

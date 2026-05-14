@@ -13,18 +13,18 @@ export const metadata: Metadata = {
     url: "https://bbq.gokiseok.com/en",
     images: [
       {
-        url: "https://bbq.gokiseok.com/images/hero-poster.jpg",
-        width: 2432,
-        height: 1760,
+        url: "https://bbq.gokiseok.com/images/thumb-nail.png",
+        width: 2400,
+        height: 1792,
         alt: "Gokiseok Konkuk Main Branch - Whole Galmaegisal",
       },
     ],
     locale: "en_US",
   },
   other: {
-    thumbnail: "https://bbq.gokiseok.com/images/hero-poster.jpg",
-    "og:image:secure_url": "https://bbq.gokiseok.com/images/hero-poster.jpg",
-    "og:image:type": "image/jpeg",
+    thumbnail: "https://bbq.gokiseok.com/images/thumb-nail.png",
+    "og:image:secure_url": "https://bbq.gokiseok.com/images/thumb-nail.png",
+    "og:image:type": "image/png",
   },
   alternates: {
     canonical: "https://bbq.gokiseok.com/en",
