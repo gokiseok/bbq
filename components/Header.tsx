@@ -4,11 +4,11 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 
 const NAV_LINKS = [
-  { label: "소개", href: "#about" },
-  { label: "메뉴", href: "#menu" },
-  { label: "단체회식", href: "#space" },
-  { label: "후기", href: "#reviews" },
-  { label: "오시는 길", href: "#location" },
+  { label: "소개", href: "/#about" },
+  { label: "메뉴", href: "/menu" },
+  { label: "단체회식", href: "/group-dining" },
+  { label: "단체룸", href: "/rooms" },
+  { label: "오시는 길", href: "/access" },
 ];
 
 const RESERVATION_URL =

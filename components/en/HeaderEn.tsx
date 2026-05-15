@@ -4,11 +4,11 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 
 const NAV_LINKS = [
-  { label: "About", href: "#about" },
-  { label: "Menu", href: "#menu" },
-  { label: "Group", href: "#space" },
-  { label: "Reviews", href: "#reviews" },
-  { label: "Location", href: "#location" },
+  { label: "About", href: "/en#about" },
+  { label: "Menu", href: "/en/menu" },
+  { label: "Group Dining", href: "/en/group-dining" },
+  { label: "Rooms", href: "/en/rooms" },
+  { label: "Access", href: "/en/access" },
 ];
 
 const RESERVATION_URL =
