@@ -3,6 +3,12 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FixedBottomBar from "@/components/FixedBottomBar";
+import { breadcrumbSchema } from "@/lib/breadcrumb";
+
+const breadcrumb = breadcrumbSchema([
+  { name: "홈", path: "/" },
+  { name: "FAQ", path: "/faq" },
+]);
 
 export const metadata: Metadata = {
   title: "고기석 건대본점 FAQ - 건대 회식·갈매기살·단체룸 자주 묻는 질문",
@@ -84,6 +90,10 @@ export default function FaqPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
       />
       <Header />
       <main className="bg-bg-base text-text-primary pt-24 md:pt-32">

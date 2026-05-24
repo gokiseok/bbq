@@ -3,6 +3,12 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FixedBottomBar from "@/components/FixedBottomBar";
+import { breadcrumbSchema } from "@/lib/breadcrumb";
+
+const breadcrumb = breadcrumbSchema([
+  { name: "홈", path: "/" },
+  { name: "단체회식", path: "/group-dining" },
+]);
 
 const RESERVATION_URL = "https://booking.naver.com/booking/6/bizes/1095878";
 const PHONE = "0507-1433-0614";
@@ -168,6 +174,10 @@ export default function GroupDiningPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
       />
       <Header />
       <main className="bg-bg-base text-text-primary pt-24 md:pt-32">

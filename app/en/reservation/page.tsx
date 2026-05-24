@@ -3,6 +3,12 @@ import Link from "next/link";
 import HeaderEn from "@/components/en/HeaderEn";
 import FooterEn from "@/components/en/FooterEn";
 import FixedBottomBarEn from "@/components/en/FixedBottomBarEn";
+import { breadcrumbSchema } from "@/lib/breadcrumb";
+
+const breadcrumb = breadcrumbSchema([
+  { name: "Home", path: "/en" },
+  { name: "Reservation", path: "/en/reservation" },
+]);
 
 const RESERVATION_URL = "https://booking.naver.com/booking/6/bizes/1095878";
 const PHONE = "0507-1433-0614";
@@ -58,6 +64,7 @@ export default function ReservationEnPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reserveSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <HeaderEn />
       <main className="bg-bg-base text-text-primary pt-24 md:pt-32">
         <section className="max-w-5xl mx-auto px-6 pb-12 md:pb-16">

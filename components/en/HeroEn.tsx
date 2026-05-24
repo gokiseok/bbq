@@ -8,8 +8,9 @@ const RESERVATION_URL =
 
 export default function HeroEn() {
   const containerRef = useRef<HTMLDivElement>(null);
-  const subtitleRef = useRef<HTMLParagraphElement>(null);
+  const subtitleRef = useRef<HTMLSpanElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
+  const taglineRef = useRef<HTMLSpanElement>(null);
   const descRef = useRef<HTMLParagraphElement>(null);
   const ctaRef = useRef<HTMLDivElement>(null);
 
@@ -39,6 +40,17 @@ export default function HeroEn() {
           "-=0.4"
         );
       }
+
+      tl.from(
+        taglineRef.current,
+        {
+          opacity: 0,
+          y: 20,
+          duration: 0.7,
+          ease: "power3.out",
+        },
+        "-=0.3"
+      );
 
       tl.from(
         [descRef.current, ctaRef.current],
@@ -83,19 +95,26 @@ export default function HeroEn() {
       <div className="absolute inset-0 bg-gradient-to-r from-bg-base/70 via-transparent to-transparent" />
 
       <div className="relative z-10 text-left max-w-7xl mx-auto px-6 w-full">
-        <p
-          ref={subtitleRef}
-          className="text-gold text-sm md:text-base tracking-[0.3em] uppercase mb-6 font-medium"
-        >
-          Korean BBQ · Skirt Meat Specialist
-        </p>
-
         <h1
           ref={titleRef}
-          className="font-brand text-[5rem] md:text-[8rem] lg:text-[10rem] text-text-primary leading-none mb-6 tracking-tight"
+          className="text-text-primary mb-6"
           style={{ perspective: "600px" }}
         >
-          {titleChars}
+          <span
+            ref={subtitleRef}
+            className="block text-gold text-sm md:text-base tracking-[0.3em] uppercase mb-4 font-medium"
+          >
+            Korean BBQ for Group Dining near Konkuk
+          </span>
+          <span className="block font-brand text-[5rem] md:text-[8rem] lg:text-[10rem] leading-none tracking-tight">
+            {titleChars}
+          </span>
+          <span
+            ref={taglineRef}
+            className="block text-text-primary/90 text-lg md:text-2xl mt-4 tracking-wide font-medium"
+          >
+            Konkuk Main · Skirt Meat Specialist
+          </span>
         </h1>
 
         <p

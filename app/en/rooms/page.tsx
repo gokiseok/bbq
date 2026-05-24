@@ -4,6 +4,12 @@ import HeaderEn from "@/components/en/HeaderEn";
 import FooterEn from "@/components/en/FooterEn";
 import FixedBottomBarEn from "@/components/en/FixedBottomBarEn";
 import ImageWithFallback from "@/components/ImageWithFallback";
+import { breadcrumbSchema } from "@/lib/breadcrumb";
+
+const breadcrumb = breadcrumbSchema([
+  { name: "Home", path: "/en" },
+  { name: "Rooms", path: "/en/rooms" },
+]);
 
 const RESERVATION_URL = "https://booking.naver.com/booking/6/bizes/1095878";
 const PHONE = "0507-1433-0614";
@@ -90,6 +96,10 @@ export default function RoomsEnPage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
       ))}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+      />
       <HeaderEn />
       <main className="bg-bg-base text-text-primary pt-24 md:pt-32">
         <section className="max-w-5xl mx-auto px-6 pb-12 md:pb-16">
