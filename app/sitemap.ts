@@ -10,6 +10,8 @@ const ROUTES: { path: string; priority: number; changeFrequency: Freq }[] = [
   // Korean
   { path: "/",              priority: 1.0,  changeFrequency: "weekly" },
   { path: "/group-dining",  priority: 0.95, changeFrequency: "weekly" },
+  { path: "/wedding-meet",  priority: 0.95, changeFrequency: "weekly" },
+  { path: "/date",          priority: 0.9,  changeFrequency: "weekly" },
   { path: "/menu",          priority: 0.9,  changeFrequency: "weekly" },
   { path: "/rooms",         priority: 0.9,  changeFrequency: "monthly" },
   { path: "/reservation",   priority: 0.85, changeFrequency: "monthly" },
