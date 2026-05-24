@@ -92,7 +92,7 @@ const restaurantSchema = {
     },
   ],
   menu: "https://bbq.gokiseok.com/#menu",
-  hasMap: "https://map.naver.com/p/search/고기석%20건대본점",
+  hasMap: "https://naver.me/5mIWObsv",
   acceptsReservations: "True",
   hasMenu: {
     "@type": "Menu",

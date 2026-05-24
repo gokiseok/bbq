@@ -36,44 +36,9 @@ export const metadata: Metadata = {
   },
 };
 
-const placeSchema = {
-  "@context": "https://schema.org",
-  "@type": "Restaurant",
-  "@id": "https://bbq.gokiseok.com/access#restaurant",
-  name: "고기석 건대본점",
-  url: "https://bbq.gokiseok.com/",
-  telephone: "+82-507-1433-0614",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "동일로22길 117-13",
-    addressLocality: "광진구",
-    addressRegion: "서울특별시",
-    postalCode: "05017",
-    addressCountry: "KR",
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: 37.54126,
-    longitude: 127.070687,
-  },
-  hasMap: "https://naver.me/5mIWObsv",
-  openingHoursSpecification: [
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-      opens: "17:30",
-      closes: "21:30",
-    },
-  ],
-};
-
 export default function AccessPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(placeSchema) }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
